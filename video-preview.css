@@ -1,0 +1,121 @@
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+}
+@media (max-width:750px){
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}}
+@media (max-width:751px) and (min-width:999px){
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+}
+@media (min-width:1000px){
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;}
+    .video-title{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+    .auther-name .view{
+      font-size: 14px;
+    }
+}
+
+.thumbnail-row{
+  margin-bottom: 10px;
+  position: relative;
+  
+}
+.video-time{
+  font-family: roboto,arial;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 10px;
+  right: 10px;
+  padding: 4px 4px;
+
+}
+.thumbnail-1{
+  width: 100%;
+ 
+
+}
+
+.video-title{
+  
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+.auther-name{
+  color: gray;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+.view{
+  color: gray;
+  font-size: 12px;
+}
+.channel-picture{
+  border-radius: 50px;
+  width: 100%;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  column-gap: 15px;
+}
+.channel-picture-container{
+  position: relative;
+  cursor: pointer;
+  
+}
+.channel-picture-container:hover .channel-tooltip{
+  opacity: 1;
+  transition: opacity 1s;
+}
+.channel-tooltip{
+  width: 200px;
+  display: flex; 
+  position: absolute;
+  bottom: -50px;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.15);
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  
+}
+.channel-picture-tooltip{
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin:10px 10px;
+}
+.p-tooltip{
+  font-family: roboto,arial;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+
+}
+.p2-tooltip{
+  color: gray;
+  font-family: roboto,arial;
+  font-size: 12px;
+  margin-top: 5px;
+}
